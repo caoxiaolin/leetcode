@@ -15,8 +15,6 @@ package leetcode
 建两个链表 left 和 right，遍历给定的链表，节点与 x 比较，小于 x 的节点加到left，否则加到right，最后合并
 */
 
-import "utils"
-
 func partition(head *ListNode, x int) *ListNode {
 	left := &ListNode{Val: 0, Next: nil}
 	right := &ListNode{Val: 0, Next: nil}
