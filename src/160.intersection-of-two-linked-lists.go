@@ -30,8 +30,6 @@ B:     b1 → b2 → b3
  * }
  */
 
-import "fmt"
-
 func getIntersectionNode(l1 *ListNode, l2 *ListNode) *ListNode {
 	p := l1
 	q := l2
@@ -71,29 +69,4 @@ func getIntersectionNode(l1 *ListNode, l2 *ListNode) *ListNode {
 		short = short.Next
 	}
 	return nil
-}
-
-func TestGetIntersectionNode() {
-	//构造链表
-	list1 := []int{18, 20, 25, 27, 32, 48, 30, 22, 40, 58}
-	nodehead1 := &ListNode{Val: 0, Next: nil}
-	listnode1 := nodehead1
-	for _, v := range list1 {
-		listnode1.Next = &ListNode{Val: v, Next: nil}
-		listnode1 = listnode1.Next
-	}
-	listnode1 = nodehead1.Next
-
-	list2 := []int{13, 20, 45, 47, 52, 88}
-	nodehead2 := &ListNode{Val: 0, Next: nil}
-	listnode2 := nodehead2
-	for _, v := range list2 {
-		listnode2.Next = &ListNode{Val: v, Next: nil}
-		listnode2 = listnode2.Next
-	}
-	//listnode2.Next = listnode1.Next.Next.Next
-	listnode2 = nodehead2.Next
-
-	res := getIntersectionNode(listnode1, listnode2)
-	fmt.Printf("\n链表相交点：%+v\n", res)
 }

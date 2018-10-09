@@ -10,12 +10,8 @@ package leetcode
 @see https://leetcode-cn.com/problems/reverse-linked-list-ii/description/
 */
 
-import (
-	"github.com/caoxiaolin/go-data-structure/linked-list"
-)
-
-func ReverseBetween(head *linkedlist.LinkNode, m int, n int) *linkedlist.LinkNode {
-	if m == n {
+func reverseBetween(head *ListNode, m int, n int) *ListNode {
+    if m == n {
 		return head
 	}
 	prev := head
@@ -23,9 +19,9 @@ func ReverseBetween(head *linkedlist.LinkNode, m int, n int) *linkedlist.LinkNod
 	next := head
 	start := head
 	end := head
-	i := 0
+	i := 1
 	for i < m {
-		//i==m-1时，表示从下一个位置开始要反转，所以记录当前p的位置，在反转完成后修改x.Next
+		//i==m-1时，表示从下一个位置开始要反转，所以记录当前位置及下一个位置
 		if i == m-1 {
 			start = cur
 			end = cur.Next
@@ -43,12 +39,8 @@ func ReverseBetween(head *linkedlist.LinkNode, m int, n int) *linkedlist.LinkNod
 	}
 	start.Next = prev
 	end.Next = cur
+    if m == 1{
+        return prev
+    }
 	return head
-}
-
-func TestReverseBetween() {
-	list := linkedlist.CreateHead(10)
-	list.Traversal()
-	ReverseBetween(list, 6, 10)
-	list.Traversal()
 }
