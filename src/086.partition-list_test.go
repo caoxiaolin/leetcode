@@ -10,16 +10,12 @@ func TestPartition(t *testing.T) {
     listnode := InitListNode(list)
 
 	x := 30
+	fmt.Printf("x = %d\n", x)
 	res := partition(listnode, x)
 
-	fmt.Printf("x = %d\n", x)
-    list1 := []int{}
-	for res != nil {
-		list1 = append(list1, res.Val)
-		res = res.Next
-	}
-    result := []int{20, 15, 7, 22, 3, 27, 43, 48, 67, 80}
-    if SliceEqual(result, list1) != true{
-        t.Errorf("\n expect: %v\nbut got: %v", result, list1)
+    result := ListNode2Slice(res)
+    expect := []int{20, 15, 7, 22, 3, 27, 43, 48, 67, 80}
+    if SliceEqual(result, expect) != true{
+        t.Errorf("\n expect: %v\nbut got: %v", expect, result)
     }
 }

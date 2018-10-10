@@ -13,13 +13,9 @@ func TestMergeTowLists(t *testing.T) {
 
 	res := mergeTwoLists(listnode1, listnode2)
 
-    list := []int{}
-	for res != nil {
-		list = append(list, res.Val)
-		res = res.Next
-	}
-    result := []int{13, 18, 20, 20, 25, 27, 32, 45, 47, 48, 52, 88}
-    if SliceEqual(result, list) != true{
-        t.Errorf("\n expect: %v\nbut got: %v", result, list)
+    result := ListNode2Slice(res)
+    expect := []int{13, 18, 20, 20, 25, 27, 32, 45, 47, 48, 52, 88}
+    if SliceEqual(result, expect) != true{
+        t.Errorf("\n expect: %v\nbut got: %v", expect, result)
     }
 }

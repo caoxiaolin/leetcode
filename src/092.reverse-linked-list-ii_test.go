@@ -10,16 +10,12 @@ func TestReverseBetween(t *testing.T) {
     listnode := InitListNode(list)
 
 	m, n := 4, 7
+	fmt.Printf("m = %d\tn = %d\n", m, n)
 	res := reverseBetween(listnode, m, n)
 
-	fmt.Printf("m = %d\tn = %d\n", m, n)
-    list1 := []int{}
-	for res != nil {
-		list1 = append(list1, res.Val)
-		res = res.Next
-	}
-    result := []int{43, 20, 15, 3, 48, 22, 7, 67, 80, 27}
-    if SliceEqual(result, list1) != true{
-        t.Errorf("\n expect: %v\nbut got: %v", result, list1)
+    result := ListNode2Slice(res)
+    expect := []int{43, 20, 15, 3, 48, 22, 7, 67, 80, 27}
+    if SliceEqual(result, expect) != true{
+        t.Errorf("\n expect: %v\nbut got: %v", expect, result)
     }
 }

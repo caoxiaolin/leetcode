@@ -12,7 +12,6 @@ func TestGetIntersectionNode(t *testing.T) {
     listnode2 := InitListNode(list2)
 
     res := getIntersectionNode(listnode1, listnode2)
-	
     if res != nil{
         t.Errorf("\n expect: %v\nbut got: %v", nil, res)
     }
@@ -20,7 +19,6 @@ func TestGetIntersectionNode(t *testing.T) {
     listnode2.Next.Next = listnode1.Next.Next.Next.Next.Next
 
     res = getIntersectionNode(listnode1, listnode2)
-
     if res != listnode2.Next.Next{
         t.Errorf("\n expect: %v\nbut got: %v", listnode2.Next.Next, res)
     }

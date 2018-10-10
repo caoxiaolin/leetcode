@@ -5,16 +5,16 @@ import (
     "testing"
 )
 
-func TestRemoveNthFromEnd(t *testing.T) {
-	list := []int{43, 20, 15, 7, 22, 48, 3, 67, 80, 27}
+func TestRemoveElements(t *testing.T) {
+	list := []int{43, 20, 15, 7, 20, 20, 20, 67, 80, 27}
     listnode := InitListNode(list)
 
-	n := 4
-	fmt.Printf("n = %d\n", n)
-	res := removeNthFromEnd(listnode, n)
+	val := 20
+	fmt.Printf("val = %d\n", val)
+	res := removeElements(listnode, val)
 
     result := ListNode2Slice(res)
-    expect := []int{43, 20, 15, 7, 22, 48, 67, 80, 27}
+    expect := []int{43, 15, 7, 67, 80, 27}
     if SliceEqual(result, expect) != true{
         t.Errorf("\n expect: %v\nbut got: %v", expect, result)
     }

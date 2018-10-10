@@ -14,6 +14,18 @@ func InitListNode(list []int) *ListNode{
 }
 
 /**
+ * ListNode to Slice
+ */
+func ListNode2Slice(list *ListNode) []int{
+    res := []int{}
+    for list != nil {
+        res = append(res, list.Val)
+        list = list.Next
+    }
+    return res
+}
+
+/**
  * Equal two slice
  */
 func SliceEqual(a, b []int) bool {
