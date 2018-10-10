@@ -4,7 +4,7 @@ go:
   - 1.10.x
 
 before_install:
-  - go get -v github.com/caoxiaolin/leetcode
+  - go get -u -v github.com/caoxiaolin/leetcode
 
 script:
   - go test -v -race -coverprofile=coverage.txt -covermode=atomic ./...
