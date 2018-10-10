@@ -19,19 +19,19 @@ package leetcode
  * }
  */
 func removeElements(head *ListNode, val int) *ListNode {
-    if head == nil{
-        return nil
-    }
-    p := &ListNode{Val:0, Next:head}  //构造头节点
-    phead := p
-    q := head
-    for q != nil {
-        if q.Val == val{
-            p.Next = q.Next  //删除节点
-        } else {
-            p = p.Next //如果不匹配，则p后移一步，否则p不动
-        }
-        q = q.Next
-    }
-    return phead.Next
+	if head == nil {
+		return nil
+	}
+	p := &ListNode{Val: 0, Next: head} //构造头节点
+	phead := p
+	q := head
+	for q != nil {
+		if q.Val == val {
+			p.Next = q.Next //删除节点
+		} else {
+			p = p.Next //如果不匹配，则p后移一步，否则p不动
+		}
+		q = q.Next
+	}
+	return phead.Next
 }

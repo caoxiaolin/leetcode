@@ -1,17 +1,20 @@
 package leetcode
 
 /**
-反转从位置 m 到 n 的链表。请使用一趟扫描完成反转。
-说明:
-1 ≤ m ≤ n ≤ 链表长度。
-示例:
-输入: 1->2->3->4->5->NULL, m = 2, n = 4
-输出: 1->4->3->2->5->NULL
-@see https://leetcode-cn.com/problems/reverse-linked-list-ii/description/
-*/
+ * 反转从位置 m 到 n 的链表。请使用一趟扫描完成反转。
+ *
+ * 说明:
+ * 1 ≤ m ≤ n ≤ 链表长度。
+ *
+ * 示例:
+ * 输入: 1->2->3->4->5->NULL, m = 2, n = 4
+ * 输出: 1->4->3->2->5->NULL
+ *
+ * @see https://leetcode-cn.com/problems/reverse-linked-list-ii/description/
+ */
 
 func reverseBetween(head *ListNode, m int, n int) *ListNode {
-    if m == n {
+	if m == n {
 		return head
 	}
 	prev := head
@@ -39,8 +42,8 @@ func reverseBetween(head *ListNode, m int, n int) *ListNode {
 	}
 	start.Next = prev
 	end.Next = cur
-    if m == 1{
-        return prev
-    }
+	if m == 1 {
+		return prev
+	}
 	return head
 }
