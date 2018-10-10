@@ -25,7 +25,7 @@ package leetcode
  *     Next *ListNode
  * }
  */
-func deleteDuplicates(head *ListNode) *ListNode {
+func deleteDuplicatesii(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head
 	}
