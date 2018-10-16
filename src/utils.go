@@ -1,5 +1,7 @@
 package leetcode
 
+var InorderBTResult = []int{} //中序遍历二叉树结果
+
 /**
  * Init singly-linked list
  */
@@ -43,4 +45,18 @@ func SliceEqual(a, b []int) bool {
 		}
 	}
 	return true
+}
+
+/**
+ * 中序遍历二叉树
+ */
+func InorderBT(root *TreeNode) {
+	if root == nil {
+		return
+	}
+	InorderBT(root.Left)
+	if root != nil {
+		InorderBTResult = append(InorderBTResult, root.Val)
+	}
+	InorderBT(root.Right)
 }
