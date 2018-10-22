@@ -15,6 +15,7 @@
 |0086|[partition-list](https://leetcode-cn.com/problems/partition-list/description/)|[GO](./src/0086.partition-list.go)|
 |0092|[reverse-linked-list-ii](https://leetcode-cn.com/problems/reverse-linked-list-ii/description/)|[GO](./src/0092.reverse-linked-list-ii.go)|
 |0109|[convert-sorted-list-to-binary-search-tree](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/description/)|[GO](./src/0109.convert-sorted-list-to-binary-search-tree.go)|
+|0114|[flatten-binary-tree-to-linked-list](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/description/)|[GO](./src/0114.flatten-binary-tree-to-linked-list.go)|
 |0142|[linked-list-cycle-ii](https://leetcode-cn.com/problems/linked-list-cycle-ii/description/)|[GO](./src/0142.linked-list-cycle-ii.go)|
 |0143|[reorder-list](https://leetcode-cn.com/problems/reorder-list/description/)|[GO](./src/0143.reorder-list.go)|
 |0147|[insertion-sort-list](https://leetcode-cn.com/problems/insertion-sort-list/description/)|[GO](./src/0147.insertion-sort-list.go)|
@@ -28,3 +29,6 @@
 |0237|[delete-node-in-a-linked-list](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/description/)|[GO](./src/0237.delete-node-in-a-linked-list.go)|
 |0445|[add-two-numbers-ii](https://leetcode-cn.com/problems/add-two-numbers-ii/description/)|[GO](./src/0445.add-two-numbers-ii.go)|
 |0622|[design-circular-queue](https://leetcode-cn.com/problems/design-circular-queue/description/)|[GO](./src/0622.design-circular-queue.go)|
+|0725|[split-linked-list-in-parts](https://leetcode-cn.com/problems/split-linked-list-in-parts/description/)|[GO](./src/0725.split-linked-list-in-parts.go)|
+|0817|[linked-list-components](https://leetcode-cn.com/problems/linked-list-components/description/)|[GO](./src/0817.linked-list-components.go)|
+|0921|[minimum-add-to-make-parentheses-valid](https://leetcode-cn.com/problems/minimum-add-to-make-parentheses-valid/description/)|[GO](./src/0921.minimum-add-to-make-parentheses-valid.go)|
