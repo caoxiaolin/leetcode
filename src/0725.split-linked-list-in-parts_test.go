@@ -14,4 +14,11 @@ func TestSplitListToParts(t *testing.T) {
 	res := splitListToParts(listnode, k)
 
 	fmt.Println(res)
+
+	k = 10
+	fmt.Printf("k = %d\n", k)
+	res = splitListToParts(listnode, k)
+
+	fmt.Println(res)
+
 }

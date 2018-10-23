@@ -6,7 +6,19 @@ import (
 
 func TestMyCricularQueue(t *testing.T) {
 	circularQueue := Constructor(3)
-	res := circularQueue.EnQueue(1) //返回true
+	res := circularQueue.DeQueue() // 返回false
+	if res != false {
+		t.Errorf("\n expect: false\nbut got: %v", res)
+	}
+	res = circularQueue.EnQueue(1) //返回true
+	if res != true {
+		t.Errorf("\n expect: true\nbut got: %v", res)
+	}
+	res = circularQueue.DeQueue() // 返回true
+	if res != true {
+		t.Errorf("\n expect: true\nbut got: %v", res)
+	}
+	res = circularQueue.EnQueue(1) //返回true
 	if res != true {
 		t.Errorf("\n expect: true\nbut got: %v", res)
 	}
