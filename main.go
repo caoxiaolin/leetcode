@@ -31,7 +31,7 @@ func createReadme() {
 		_, err := strconv.Atoi(fn[0])
 		if err == nil && strings.Index(fn[1], "_test") == -1 {
 			title, link := readTitleAndLink(fname)
-			data.WriteString("\n|" + title + "|[" + fn[1] + "](" + link + ")|[GO](./src/" + fname + ")|")
+			data.WriteString("\n|" + fn[0] + "|[" + title + "](" + link + ")|[GO](./src/" + fname + ")|")
 		}
 	}
 
