@@ -1,6 +1,8 @@
 package leetcode
 
 /**
+ * @title 分隔链表
+ *
  * 给定一个头结点为 root 的链表, 编写一个函数以将链表分隔为 k 个连续的部分。
  *
  * 每部分的长度应该尽可能的相等: 任意两部分的长度差距不能超过 1，也就是说可能有些部分为 null。
@@ -27,7 +29,6 @@ package leetcode
  * 输出: [[1, 2, 3, 4], [5, 6, 7], [8, 9, 10]]
  * 解释:
  * 输入被分成了几个连续的部分，并且每部分的长度相差不超过1.前面部分的长度大于等于后面部分的长度。
- *
  *
  * @see https://leetcode-cn.com/problems/split-linked-list-in-parts/description/
  */
