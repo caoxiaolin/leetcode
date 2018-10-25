@@ -9,7 +9,9 @@
 |0019|[删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/description/)|[GO](./src/0019.remove-nth-node-from-end-of-list.go)|
 |0021|[合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/description/)|[GO](./src/0021.merge-two-sorted-lists.go)|
 |0024|[两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/description/)|[GO](./src/0024.swap-nodes-in-pairs.go)|
+|0059|[螺旋矩阵 II](https://leetcode-cn.com/problems/spiral-matrix-ii/description/)|[GO](./src/0059.spiral-matrix-ii.go)|
 |0061|[旋转链表](https://leetcode-cn.com/problems/rotate-list/description/)|[GO](./src/0061.rotate-list.go)|
+|0078|[子集](https://leetcode-cn.com/problems/subsets/description/)|[GO](./src/0078.subsets.go)|
 |0082|[删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/description/)|[GO](./src/0082.remove-duplicates-from-sorted-list-ii.go)|
 |0083|[删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/description/)|[GO](./src/0083.remove-duplicates-from-sorted-list.go)|
 |0086|[分隔链表](https://leetcode-cn.com/problems/partition-list/description/)|[GO](./src/0086.partition-list.go)|

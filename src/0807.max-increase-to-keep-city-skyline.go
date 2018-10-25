@@ -35,8 +35,35 @@ package leetcode
  * 一座建筑物占据一个grid[i][j]：换言之，它们是 1 x 1 x grid[i][j] 的长方体。
  *
  * @see https://leetcode-cn.com/problems/max-increase-to-keep-city-skyline/description/
+ *
+ * 基本思路：
+ * 找到每行、每列的最大值，遍历数组，每个元素值增加至min(行最大, 列最大)
  */
 
 func maxIncreaseKeepingSkyline(grid [][]int) int {
-	return 0
+	maxRow, maxCloumn := [50]int{}, [50]int{}
+	for x, row := range grid {
+		for y, val := range row {
+			if val > maxRow[x] {
+				maxRow[x] = val
+			}
+			if val > maxCloumn[y] {
+				maxCloumn[y] = val
+			}
+		}
+	}
+	result := 0
+	for x, row := range grid {
+		for y, val := range row {
+			result += func(m, n int) int {
+				if m > n {
+					return n
+				} else {
+					return m
+				}
+			}(maxRow[x], maxCloumn[y]) - val
+		}
+	}
+
+	return result
 }
