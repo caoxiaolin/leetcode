@@ -15,11 +15,4 @@ func TestFlatten(t *testing.T) {
 	result := LevelorderBTResult
 
 	fmt.Printf("%v\n", result)
-	/*
-	   result := LevelorderBTResult
-	   expect := []int{1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6}
-	   if SliceEqual(result, expect) != true {
-	       t.Errorf("\n expect: %v\nbut got: %v", expect, result)
-	   }
-	*/
 }

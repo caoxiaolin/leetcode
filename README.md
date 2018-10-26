@@ -36,5 +36,6 @@
 |0707|[设计链表](https://leetcode-cn.com/problems/design-linked-list/description/)|[GO](./src/0707.design-linked-list.go)|
 |0725|[分隔链表](https://leetcode-cn.com/problems/split-linked-list-in-parts/description/)|[GO](./src/0725.split-linked-list-in-parts.go)|
 |0807|[保持城市天际线](https://leetcode-cn.com/problems/max-increase-to-keep-city-skyline/description/)|[GO](./src/0807.max-increase-to-keep-city-skyline.go)|
+|0814|[二叉树剪枝](https://leetcode-cn.com/problems/binary-tree-pruning/description/)|[GO](./src/0814.binary-tree-pruning.go)|
 |0817|[链表组件](https://leetcode-cn.com/problems/linked-list-components/description/)|[GO](./src/0817.linked-list-components.go)|
 |0921|[使括号有效的最少添加](https://leetcode-cn.com/problems/minimum-add-to-make-parentheses-valid/description/)|[GO](./src/0921.minimum-add-to-make-parentheses-valid.go)|
