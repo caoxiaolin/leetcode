@@ -21,17 +21,19 @@ func createReadme() {
 
 # leetcode
 
-| # | Title | Solution |
-|---| ----- | -------- |`)
+| # | # | Title | Solution |
+|---|---| ----- | -------- |`)
 	path := "./src/"
 	files, _ := ioutil.ReadDir(path)
+	i := 1
 	for _, f := range files {
 		fname := f.Name()
 		fn := strings.Split(fname, ".")
 		_, err := strconv.Atoi(fn[0])
 		if err == nil && strings.Index(fn[1], "_test") == -1 {
 			title, link := readTitleAndLink(fname)
-			data.WriteString("\n|" + fn[0] + "|[" + title + "](" + link + ")|[GO](./src/" + fname + ")|")
+			data.WriteString("\n|" + strconv.Itoa(i) + "|" + fn[0] + "|[" + title + "](" + link + ")|[GO](./src/" + fname + ")|")
+			i++
 		}
 	}
 

@@ -7,12 +7,10 @@ import (
 
 func TestFlatten(t *testing.T) {
 	s := "12345#6"
-	treenode := InorderBuildBT(s)
+	treenode := PreorderBuildBT(s)
 	flatten(treenode)
 
-	LevelorderBTResult = []int{}
-	LevelorderBT(treenode)
-	result := LevelorderBTResult
+	result := LevelorderBT(treenode)
 
 	fmt.Printf("%v\n", result)
 }

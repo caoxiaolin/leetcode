@@ -7,12 +7,10 @@ import (
 
 func TestPruneTree(t *testing.T) {
 	s := "1000101"
-	treenode := InorderBuildBT(s)
+	treenode := PreorderBuildBT(s)
 	tree := pruneTree(treenode)
 
-	InorderBTResult = []int{}
-	InorderBT(tree)
-	result := InorderBTResult
+	result := PreorderBT(tree)
 
 	fmt.Printf("%v\n", result)
 }

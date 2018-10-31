@@ -10,10 +10,7 @@ func TestSortedListToBST(t *testing.T) {
 
 	res := sortedListToBST(listnode)
 
-	LevelorderBTResult = []int{}
-	LevelorderBT(res)
-
-	result := LevelorderBTResult
+	result := LevelorderBT(res)
 	expect := []int{1, -3, 9, -10, 5}
 	if SliceEqual(result, expect) != true {
 		t.Errorf("\n expect: %v\nbut got: %v", expect, result)

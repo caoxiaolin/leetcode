@@ -2,9 +2,7 @@ package leetcode
 
 import "strconv"
 
-var StrBT string                 //构造二叉树的字符串
-var InorderBTResult = []int{}    //中序遍历二叉树结果
-var LevelorderBTResult = []int{} //层序遍历二叉树结果
+var StrBT string //构造二叉树的字符串
 
 /**
  * Init singly-linked list
@@ -52,9 +50,25 @@ func SliceEqual(a, b []int) bool {
 }
 
 /**
+ * merge two slice
+ */
+func mergeSlice(a, b []int) []int {
+	if a == nil {
+		return b
+	}
+	if b == nil {
+		return a
+	}
+	for _, v := range b {
+		a = append(a, v)
+	}
+	return a
+}
+
+/**
  * 前序构建二叉树
  */
-func InorderBuildBT(s string) *TreeNode {
+func PreorderBuildBT(s string) *TreeNode {
 	if len(s) == 0 {
 		return nil
 	}
@@ -64,23 +78,67 @@ func InorderBuildBT(s string) *TreeNode {
 		var t TreeNode
 		val, _ := strconv.Atoi(c)
 		t.Val = val
-		t.Left = InorderBuildBT(StrBT)
-		t.Right = InorderBuildBT(StrBT)
+		t.Left = PreorderBuildBT(StrBT)
+		t.Right = PreorderBuildBT(StrBT)
 		return &t
 	}
 	return nil
 }
 
 /**
+ * 层序构建二叉树
+ */
+func LevelorderBuildBT(a []interface{}) *TreeNode {
+	length := len(a)
+	if length == 0 {
+		return nil
+	}
+	queue := make([]interface{}, length)
+	i, j := 0, 0
+	root := &TreeNode{a[0].(int), nil, nil}
+	queue[0] = root
+	for i < length {
+		if queue[j] == nil {
+		}
+		if queue[j] != nil {
+			node := queue[j].(*TreeNode)
+			i++
+			if i == length {
+				break
+			}
+			if a[i] != nil {
+				node.Left = &TreeNode{a[i].(int), nil, nil}
+				queue[i] = node.Left
+			} else {
+				queue[i] = nil
+			}
+			i++
+			if i == length {
+				break
+			}
+			if a[i] != nil {
+				node.Right = &TreeNode{a[i].(int), nil, nil}
+				queue[i] = node.Right
+			} else {
+				queue[i] = nil
+			}
+		}
+		j++
+	}
+	return root
+}
+
+/**
  * 层序遍历二叉树
  */
-func LevelorderBT(root *TreeNode) {
+func LevelorderBT(root *TreeNode) []int {
 	queue := make([]*TreeNode, 20)
 	i, j := 0, 1
 	queue[i] = root
+	res := []int{}
 	for queue[i] != nil {
 		node := queue[i]
-		LevelorderBTResult = append(LevelorderBTResult, node.Val)
+		res = append(res, node.Val)
 		i++
 		if node.Left != nil {
 			queue[j] = node.Left
@@ -91,18 +149,21 @@ func LevelorderBT(root *TreeNode) {
 			j++
 		}
 	}
+	return res
 }
 
 /**
  * 前序遍历二叉树
  */
-func InorderBT(root *TreeNode) {
+func PreorderBT(root *TreeNode) []int {
 	if root == nil {
-		return
+		return nil
 	}
+	res := []int{}
 	if root != nil {
-		InorderBTResult = append(InorderBTResult, root.Val)
+		res = append(res, root.Val)
 	}
-	InorderBT(root.Left)
-	InorderBT(root.Right)
+	res = mergeSlice(res, PreorderBT(root.Left))
+	res = mergeSlice(res, PreorderBT(root.Right))
+	return res
 }
