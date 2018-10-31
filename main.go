@@ -16,7 +16,7 @@ func main() {
 
 func createReadme() {
 	data := bytes.Buffer{}
-    data.WriteString(`<style>medium{background-color:yellow;border-radius:5px;padding:2px 7px;color:#FFF}</style>
+    data.WriteString(`<style>em{background-color:yellow;border-radius:5px;padding:2px 7px;color:#FFF}</style>
 [![Build Status](https://www.travis-ci.org/caoxiaolin/leetcode.svg?branch=master)](https://www.travis-ci.org/caoxiaolin/leetcode)
 [![codecov.io](https://codecov.io/github/caoxiaolin/leetcode/coverage.svg?branch=master)](https://codecov.io/github/caoxiaolin/leetcode?branch=master)
 
@@ -33,13 +33,7 @@ func createReadme() {
 		_, err := strconv.Atoi(fn[0])
 		if err == nil && strings.Index(fn[1], "_test") == -1 {
 			res := readTitleAndLink(fname)
-            class := "medium"
-            if res[2] == "Easy" {
-                class = "easy"
-            }else if res[2] == "Hard" {
-                class = "hard"
-            }
-			data.WriteString("\n|" + strconv.Itoa(i) + "|" + fn[0] + "|[" + res[0] + "](" + res[1] + ")|[GO](./src/" + fname + ")|<" + class + ">" + res[2] + "</" + class + ">|")
+			data.WriteString("\n|" + strconv.Itoa(i) + "|" + fn[0] + "|[" + res[0] + "](" + res[1] + ")|[GO](./src/" + fname + ")|<em>" + res[2] + "</em>|")
 			i++
 		}
 	}
