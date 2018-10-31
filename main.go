@@ -21,8 +21,8 @@ func createReadme() {
 
 # leetcode
 
-| # | # | Title | Solution |
-|---|---| ----- | -------- |`)
+| # | # | Title | Solution | Difficulty |
+|---|---| ----- | -------- | ---------- |`)
 	path := "./src/"
 	files, _ := ioutil.ReadDir(path)
 	i := 1
@@ -31,8 +31,8 @@ func createReadme() {
 		fn := strings.Split(fname, ".")
 		_, err := strconv.Atoi(fn[0])
 		if err == nil && strings.Index(fn[1], "_test") == -1 {
-			title, link := readTitleAndLink(fname)
-			data.WriteString("\n|" + strconv.Itoa(i) + "|" + fn[0] + "|[" + title + "](" + link + ")|[GO](./src/" + fname + ")|")
+			res := readTitleAndLink(fname)
+			data.WriteString("\n|" + strconv.Itoa(i) + "|" + fn[0] + "|[" + res[0] + "](" + res[1] + ")|[GO](./src/" + fname + ")|<span class='btn'>" + res[2] + "</span>|")
 			i++
 		}
 	}
@@ -41,14 +41,12 @@ func createReadme() {
 	ioutil.WriteFile("./README.md", []byte(content), 0644)
 }
 
-func readTitleAndLink(fname string) (string, string) {
+func readTitleAndLink(fname string) (res [3]string) {
 	fi, _ := os.Open("./src/" + fname)
 
 	defer fi.Close()
 
 	br := bufio.NewReader(fi)
-	title := ""
-	link := ""
 	for {
 		a, _, c := br.ReadLine()
 		if c == io.EOF {
@@ -56,12 +54,15 @@ func readTitleAndLink(fname string) (string, string) {
 		}
 		data := string(a)
 		if strings.Index(data, "@title") > 0 {
-			title = data[10:]
+			res[0] = data[10:]
 		}
 		if strings.Index(data, "@see") > 0 {
-			link = data[8:]
+			res[1] = data[8:]
+		}
+		if strings.Index(data, "@difficulty") > 0 {
+			res[2] = data[15:]
 			break
 		}
 	}
-	return title, link
+	return
 }
