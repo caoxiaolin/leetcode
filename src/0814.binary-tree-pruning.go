@@ -25,7 +25,6 @@ package leetcode
  *     Right *TreeNode
  * }
  */
-import "fmt"
 
 func pruneTree(root *TreeNode) *TreeNode {
 	if root == nil {
@@ -34,7 +33,6 @@ func pruneTree(root *TreeNode) *TreeNode {
 	root.Left = pruneTree(root.Left)
 	root.Right = pruneTree(root.Right)
 	if root.Left == nil && root.Right == nil && root.Val == 0 {
-		fmt.Println(root)
 		return nil
 	}
 	return root

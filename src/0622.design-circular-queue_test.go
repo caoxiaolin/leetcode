@@ -66,4 +66,20 @@ func TestMyCricularQueue(t *testing.T) {
 	if res1 != 2 {
 		t.Errorf("\n expect: 4\nbut got: %v", res1)
 	}
+	res = circularQueue.DeQueue() // 返回true
+	if res != true {
+		t.Errorf("\n expect: true\nbut got: %v", res)
+	}
+	res = circularQueue.DeQueue() // 返回true
+	if res != true {
+		t.Errorf("\n expect: true\nbut got: %v", res)
+	}
+	res = circularQueue.DeQueue() // 返回true
+	if res != true {
+		t.Errorf("\n expect: true\nbut got: %v", res)
+	}
+	res = circularQueue.DeQueue() // 返回false
+	if res != false {
+		t.Errorf("\n expect: true\nbut got: %v", res)
+	}
 }
