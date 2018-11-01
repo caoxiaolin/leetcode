@@ -18,4 +18,26 @@ func TestReverseBetween(t *testing.T) {
 	if SliceEqual(result, expect) != true {
 		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
 	}
+
+	m = 1
+	fmt.Printf("m = %d\tn = %d\n", m, n)
+	res = reverseBetween(listnode, m, n)
+	result = ListNode2Slice(res)
+	expect = []int{7, 22, 48, 3, 15, 20, 43, 67, 80, 27}
+	if SliceEqual(result, expect) != true {
+		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
+	}
+
+	list = []int{43, 20, 15, 7, 22, 48, 3, 67, 80, 27}
+	listnode = InitListNode(list)
+	m = 1
+	n = 1
+	fmt.Printf("m = %d\tn = %d\n", m, n)
+	res = reverseBetween(listnode, m, n)
+	result = ListNode2Slice(res)
+	expect = []int{43, 20, 15, 7, 22, 48, 3, 67, 80, 27}
+	if SliceEqual(result, expect) != true {
+		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
+	}
+
 }

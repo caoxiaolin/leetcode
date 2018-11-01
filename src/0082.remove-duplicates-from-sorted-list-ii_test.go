@@ -15,4 +15,16 @@ func TestDeleteDuplicates2(t *testing.T) {
 	if SliceEqual(result, expect) != true {
 		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
 	}
+
+	list = []int{13}
+	listnode = InitListNode(list)
+
+	res = deleteDuplicates2(listnode)
+
+	result = ListNode2Slice(res)
+	expect = []int{13}
+	if SliceEqual(result, expect) != true {
+		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
+	}
+
 }
