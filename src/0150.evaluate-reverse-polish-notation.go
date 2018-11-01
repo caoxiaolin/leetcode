@@ -34,6 +34,7 @@ package leetcode
  * = 22
  *
  * @see https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/description/
+ * @difficulty Medium
  *
  * 基本思路：
  * 栈

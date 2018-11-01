@@ -14,6 +14,7 @@ package leetcode
  * 输出: 1->2->3
  *
  * @see https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/description/
+ * @difficulty Easy
  */
 
 /**

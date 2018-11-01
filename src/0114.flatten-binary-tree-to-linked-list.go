@@ -27,6 +27,7 @@ package leetcode
  *           6
  *
  * @see https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/description/
+ * @difficulty Medium
  */
 
 /**

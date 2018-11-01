@@ -28,6 +28,7 @@ package leetcode
  * 输出: 701
  *
  * @see https://leetcode-cn.com/problems/excel-sheet-column-number/description/
+ * @difficulty Easy
  *
  * 基本思路：
  * 26进制转10进制

@@ -31,6 +31,7 @@ package leetcode
  * 输入被分成了几个连续的部分，并且每部分的长度相差不超过1.前面部分的长度大于等于后面部分的长度。
  *
  * @see https://leetcode-cn.com/problems/split-linked-list-in-parts/description/
+ * @difficulty Medium
  */
 
 /**

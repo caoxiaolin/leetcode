@@ -19,6 +19,7 @@ package leetcode
  * 给定数字的范围是 [0, 10^8]
  *
  * @see https://leetcode-cn.com/problems/maximum-swap/description/
+ * @difficulty Medium
  */
 
 import "strconv"

@@ -29,6 +29,7 @@ package leetcode
  * 请不要使用内置的 LinkedList 库。
  *
  * @see https://leetcode-cn.com/problems/design-linked-list/description/
+ * @difficulty Easy
  */
 
 type MyLinkedList struct {

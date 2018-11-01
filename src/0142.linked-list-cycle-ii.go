@@ -7,6 +7,7 @@ package leetcode
  * 说明：不允许修改给定的链表。
  *
  * @see https://leetcode-cn.com/problems/linked-list-cycle-ii/description/
+ * @difficulty Medium
  *
  * 基本思路：
  * 快慢指针

@@ -11,6 +11,7 @@ package leetcode
  * 输出: 1->2->3->4->5
  *
  * @see https://leetcode-cn.com/problems/remove-linked-list-elements/description/
+ * @difficulty Easy
  */
 
 /**

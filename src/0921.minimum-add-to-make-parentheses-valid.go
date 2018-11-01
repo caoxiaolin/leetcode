@@ -33,6 +33,7 @@ package leetcode
  * S 只包含 '(' 和 ')' 字符。
  *
  * @see https://leetcode-cn.com/problems/minimum-add-to-make-parentheses-valid/description/
+ * @difficulty Medium
  *
  * 基本思路：
  * 栈

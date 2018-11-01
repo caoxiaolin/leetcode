@@ -14,6 +14,7 @@ package leetcode
  * 输出: [1,null,0,null,1]
  *
  * @see https://leetcode-cn.com/problems/binary-tree-pruning/description/
+ * @difficulty Medium
  */
 
 /**

@@ -11,6 +11,7 @@ package leetcode
  * 输出：1->1->2->3->4->4
  *
  * @see https://leetcode-cn.com/problems/merge-two-sorted-lists/description/
+ * @difficulty Easy
  *
  * 基本思路：
  * 同步遍历两个链表，比较val，对于val小的，取出来加入新链表，同时当前链表节点后移，循环比较，直至一个链表结束

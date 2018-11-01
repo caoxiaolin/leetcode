@@ -26,6 +26,7 @@ package leetcode
  * 不要从你的函数中返回任何结果。
  *
  * @see https://leetcode-cn.com/problems/delete-node-in-a-linked-list/description/
+ * @difficulty Easy
  *
  * 基本思路：
  * 要删除节点的值变成下一个节点的值，Next指针指向下一个节点的Next

@@ -16,6 +16,7 @@ package leetcode
  * 你能尝试使用一趟扫描实现吗？
  *
  * @see https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/description/
+ * @difficulty Medium
  */
 
 /**

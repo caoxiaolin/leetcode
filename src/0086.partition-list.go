@@ -12,6 +12,7 @@ package leetcode
  * 输出: 1->2->2->4->3->5
  *
  * @see https://leetcode-cn.com/problems/partition-list/description/
+ * @difficulty Medium
  *
  * 基本思路：
  * 建两个链表 left 和 right，遍历给定的链表，节点与 x 比较，小于 x 的节点加到left，否则加到right，最后合并

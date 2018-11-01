@@ -15,6 +15,7 @@ package leetcode
  * 输出: 2->3
  *
  * @see https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/description/
+ * @difficulty Medium
  *
  * 基本思路：
  * 双指针

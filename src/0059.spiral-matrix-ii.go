@@ -16,8 +16,9 @@ package leetcode
  * ]
  *
  * @see https://leetcode-cn.com/problems/spiral-matrix-ii/description/
+ * @difficulty Medium
  */
-//import "fmt"
+
 func generateMatrix(n int) [][]int {
 	if n == 1 {
 		return [][]int{{1}}

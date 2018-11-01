@@ -35,6 +35,7 @@ package leetcode
  * 一座建筑物占据一个grid[i][j]：换言之，它们是 1 x 1 x grid[i][j] 的长方体。
  *
  * @see https://leetcode-cn.com/problems/max-increase-to-keep-city-skyline/description/
+ * @difficulty Medium
  *
  * 基本思路：
  * 找到每行、每列的最大值，遍历数组，每个元素值增加至min(行最大, 列最大)

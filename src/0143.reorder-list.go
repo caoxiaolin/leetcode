@@ -16,6 +16,7 @@ package leetcode
  * 给定链表 1->2->3->4->5, 重新排列为 1->5->2->4->3.
  *
  * @see https://leetcode-cn.com/problems/reorder-list/description/
+ * @difficulty Medium
  *
  * 基本思路：
  * 找到链表中点，一分为二，后半段反转，同时遍历两个链表，隔一个插一个节点，形成新的链表

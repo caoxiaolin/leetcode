@@ -20,6 +20,7 @@ package leetcode
  *  -10  5
  *
  * @see https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/description/
+ * @difficulty Medium
  *
  * 基本思路：
  * 快慢指针，二分查找中间节点作为root，左右链表递归

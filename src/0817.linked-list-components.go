@@ -26,6 +26,7 @@ package leetcode
  * 链表中，0 和 1 是相连接的，3 和 4 是相连接的，所以 [0, 1] 和 [3, 4] 是两个组件，故返回 2。
  *
  * @see https://leetcode-cn.com/problems/linked-list-components/description/
+ * @difficulty Medium
  */
 
 /**

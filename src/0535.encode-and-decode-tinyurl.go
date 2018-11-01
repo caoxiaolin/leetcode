@@ -9,6 +9,7 @@ package leetcode
  * 你的加密和解密算法如何设计和运作是没有限制的，你只需要保证一个URL可以被加密成一个TinyURL，并且这个TinyURL可以用解密方法恢复成原本的URL。
  *
  * @see https://leetcode-cn.com/problems/encode-and-decode-tinyurl/description/
+ * @difficulty Medium
  *
  * 基本思路：
  * 数组存储longUrl，数组下标本身是自增id，id转62进制生成短链

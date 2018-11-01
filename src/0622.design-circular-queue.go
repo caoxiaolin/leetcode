@@ -34,6 +34,7 @@ package leetcode
  * 请不要使用内置的队列库。
  *
  * @see https://leetcode-cn.com/problems/design-circular-queue/description/
+ * @difficulty Easy
  */
 
 type MyCircularQueue struct {

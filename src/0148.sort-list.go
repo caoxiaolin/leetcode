@@ -15,6 +15,7 @@ package leetcode
  * 输出: -1->0->3->4->5
  *
  * @see https://leetcode-cn.com/problems/sort-list/description/
+ * @difficulty Medium
  *
  * 基本思路：
  * O(n log n)的时间复杂度，归并排序

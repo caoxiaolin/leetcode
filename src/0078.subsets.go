@@ -23,6 +23,7 @@ package leetcode
  * ]
  *
  * @see https://leetcode-cn.com/problems/subsets/description/
+ * @difficulty Medium
  */
 func subsets(nums []int) [][]int {
 	result := [][]int{}

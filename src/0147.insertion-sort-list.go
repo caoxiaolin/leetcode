@@ -22,6 +22,7 @@ package leetcode
  * 输出: -1->0->3->4->5
  *
  * @see https://leetcode-cn.com/problems/insertion-sort-list/description/
+ * @difficulty Medium
  */
 
 /**

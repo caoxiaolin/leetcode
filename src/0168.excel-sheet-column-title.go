@@ -28,6 +28,7 @@ package leetcode
  * 输出: "ZY"
  *
  * @see https://leetcode-cn.com/problems/excel-sheet-column-title/description/
+ * @difficulty Easy
  *
  * 基本思路：
  * 10进制转26进制

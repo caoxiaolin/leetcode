@@ -15,6 +15,7 @@ package leetcode
  * 输出: 7 -> 8 -> 0 -> 7
  *
  * @see https://leetcode-cn.com/problems/add-two-numbers-ii/description/
+ * @difficulty Medium
  */
 
 import "fmt"

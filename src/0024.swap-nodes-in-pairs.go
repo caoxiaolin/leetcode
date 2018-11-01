@@ -14,6 +14,7 @@ package leetcode
  * 你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
  *
  * @see https://leetcode-cn.com/problems/swap-nodes-in-pairs/description/
+ * @difficulty Medium
  */
 
 /**

@@ -23,6 +23,7 @@ package leetcode
  *  向右旋转 4 步: 2->0->1->NULL
  *
  * @see https://leetcode-cn.com/problems/rotate-list/description/
+ * @difficulty Medium
  *
  * 基本思路：
  *
