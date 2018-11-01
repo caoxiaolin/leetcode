@@ -22,9 +22,6 @@ package leetcode
  * }
  */
 func removeElements(head *ListNode, val int) *ListNode {
-	if head == nil {
-		return nil
-	}
 	p := &ListNode{Val: 0, Next: head} //构造头节点
 	phead := p
 	q := head

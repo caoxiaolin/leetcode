@@ -20,4 +20,11 @@ func TestTinyURL(t *testing.T) {
 	if result != expect {
 		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
 	}
+
+	shortUrl = "A48s"
+	result = obj.Decode(shortUrl)
+	expect = ""
+	if result != expect {
+		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
+	}
 }

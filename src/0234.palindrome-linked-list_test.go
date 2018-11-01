@@ -18,4 +18,11 @@ func TestIsPalindrome(t *testing.T) {
 	if res != false {
 		t.Errorf("\n expect: false\nbut got: %v", res)
 	}
+
+	list = []int{1}
+	listnode = InitListNode(list)
+	res = isPalindrome(listnode)
+	if res != true {
+		t.Errorf("\n expect: false\nbut got: %v", res)
+	}
 }
