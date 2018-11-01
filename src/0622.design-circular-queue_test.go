@@ -10,6 +10,14 @@ func TestMyCricularQueue(t *testing.T) {
 	if res != false {
 		t.Errorf("\n expect: false\nbut got: %v", res)
 	}
+	res1 := circularQueue.Rear() // 返回-1
+	if res1 != -1 {
+		t.Errorf("\n expect: -1\nbut got: %v", res1)
+	}
+	res1 = circularQueue.Front() // 返回-1
+	if res1 != -1 {
+		t.Errorf("\n expect: -1\nbut got: %v", res1)
+	}
 	res = circularQueue.EnQueue(1) //返回true
 	if res != true {
 		t.Errorf("\n expect: true\nbut got: %v", res)
@@ -34,9 +42,9 @@ func TestMyCricularQueue(t *testing.T) {
 	if res != false {
 		t.Errorf("\n expect: false\nbut got: %v", res)
 	}
-	res1 := circularQueue.Rear() // 返回3
+	res1 = circularQueue.Rear() // 返回3
 	if res1 != 3 {
-		t.Errorf("\n expect: 3\nbut got: %v", res)
+		t.Errorf("\n expect: 3\nbut got: %v", res1)
 	}
 	res = circularQueue.IsFull() // 返回true
 	if res != true {
@@ -52,6 +60,10 @@ func TestMyCricularQueue(t *testing.T) {
 	}
 	res1 = circularQueue.Rear() // 返回4
 	if res1 != 4 {
-		t.Errorf("\n expect: 4\nbut got: %v", res)
+		t.Errorf("\n expect: 4\nbut got: %v", res1)
+	}
+	res1 = circularQueue.Front() // 返回2
+	if res1 != 2 {
+		t.Errorf("\n expect: 4\nbut got: %v", res1)
 	}
 }

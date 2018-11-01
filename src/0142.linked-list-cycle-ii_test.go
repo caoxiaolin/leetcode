@@ -19,4 +19,11 @@ func TestDetectCycle(t *testing.T) {
 	if res != listnode.Next.Next {
 		t.Errorf("\n expect: %v\nbut got: %v", listnode.Next.Next, res)
 	}
+
+	listnode.Next = listnode
+	res = detectCycle(listnode)
+	if res != listnode.Next {
+		t.Errorf("\n expect: %v\nbut got: %v", listnode.Next, res)
+	}
+
 }

@@ -15,4 +15,13 @@ func TestReorderList(t *testing.T) {
 	if SliceEqual(result, expect) != true {
 		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
 	}
+
+	list = []int{1}
+	listnode = InitListNode(list)
+	reorderList(listnode)
+	result = ListNode2Slice(listnode)
+	expect = []int{1}
+	if SliceEqual(result, expect) != true {
+		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
+	}
 }
