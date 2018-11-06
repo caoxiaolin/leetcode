@@ -155,6 +155,7 @@ func LevelorderBT(root *TreeNode) []int {
 /**
  * 前序遍历二叉树
  */
+/*
 func PreorderBT(root *TreeNode) []int {
 	if root == nil {
 		return nil
@@ -167,3 +168,4 @@ func PreorderBT(root *TreeNode) []int {
 	res = mergeSlice(res, PreorderBT(root.Right))
 	return res
 }
+*/
