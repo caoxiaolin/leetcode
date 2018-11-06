@@ -6,7 +6,7 @@ import (
 )
 
 func TestSplitListToParts(t *testing.T) {
-	list := []int{0, 1, 2, 3, 4, 5, 6}
+	list := []int{1, 2, 3, 4, 5, 6, 7, 8}
 	listnode := InitListNode(list)
 
 	k := 1
@@ -16,36 +16,43 @@ func TestSplitListToParts(t *testing.T) {
 
 	k = 2
 	fmt.Printf("k = %d\n", k)
+	listnode = InitListNode(list)
 	res = splitListToParts(listnode, k)
 	fmt.Println(res)
 
 	k = 3
 	fmt.Printf("k = %d\n", k)
+	listnode = InitListNode(list)
 	res = splitListToParts(listnode, k)
 	fmt.Println(res)
 
 	k = 4
 	fmt.Printf("k = %d\n", k)
+	listnode = InitListNode(list)
 	res = splitListToParts(listnode, k)
 	fmt.Println(res)
 
 	k = 5
 	fmt.Printf("k = %d\n", k)
+	listnode = InitListNode(list)
 	res = splitListToParts(listnode, k)
 	fmt.Println(res)
 
 	k = 6
 	fmt.Printf("k = %d\n", k)
+	listnode = InitListNode(list)
 	res = splitListToParts(listnode, k)
 	fmt.Println(res)
 
 	k = 7
 	fmt.Printf("k = %d\n", k)
+	listnode = InitListNode(list)
 	res = splitListToParts(listnode, k)
 	fmt.Println(res)
 
 	k = 10
 	fmt.Printf("k = %d\n", k)
+	listnode = InitListNode(list)
 	res = splitListToParts(listnode, k)
 	fmt.Println(res)
 

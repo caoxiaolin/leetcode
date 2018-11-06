@@ -84,9 +84,6 @@ func PreorderBuildBT(s string) *TreeNode {
  */
 func LevelorderBuildBT(a []interface{}) *TreeNode {
 	length := len(a)
-	if length == 0 {
-		return nil
-	}
 	queue := make([]interface{}, length)
 	i, j := 0, 0
 	root := &TreeNode{a[0].(int), nil, nil}
