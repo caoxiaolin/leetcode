@@ -18,4 +18,19 @@ func TestAddTwoNumbers2(t *testing.T) {
 	if SliceEqual(result, expect) != true {
 		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
 	}
+
+	list1 = []int{1, 2, 3}
+	listnode1 = InitListNode(list1)
+
+	list2 = []int{1, 1, 8}
+	listnode2 = InitListNode(list2)
+
+	res = addTwoNumbers2(listnode1, listnode2)
+
+	result = ListNode2Slice(res)
+	expect = []int{2, 4, 1}
+	if SliceEqual(result, expect) != true {
+		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
+	}
+
 }

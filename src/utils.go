@@ -33,14 +33,6 @@ func ListNode2Slice(list *ListNode) []int {
  * Equal two slice
  */
 func SliceEqual(a, b []int) bool {
-	if len(a) != len(b) {
-		return false
-	}
-
-	if (a == nil) != (b == nil) {
-		return false
-	}
-
 	for i, v := range a {
 		if v != b[i] {
 			return false
@@ -52,6 +44,7 @@ func SliceEqual(a, b []int) bool {
 /**
  * merge two slice
  */
+/*
 func mergeSlice(a, b []int) []int {
 	if a == nil {
 		return b
@@ -64,6 +57,7 @@ func mergeSlice(a, b []int) []int {
 	}
 	return a
 }
+*/
 
 /**
  * 前序构建二叉树
