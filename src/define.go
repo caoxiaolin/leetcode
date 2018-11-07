@@ -16,3 +16,12 @@ type TreeNode struct {
 	Left  *TreeNode
 	Right *TreeNode
 }
+
+/**
+ * Definition for a special tree
+ */
+type TreeLinkNode struct {
+	Left  *TreeLinkNode
+	Right *TreeLinkNode
+	Next  *TreeLinkNode
+}
