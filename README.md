@@ -20,7 +20,7 @@
 |13|0109|[有序链表转换二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/description/)|[GO](./src/0109.convert-sorted-list-to-binary-search-tree.go)|Medium|
 |14|0114|[二叉树展开为链表](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/description/)|[GO](./src/0114.flatten-binary-tree-to-linked-list.go)|Medium|
 |15|0116|[填充同一层的兄弟节点](https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/description/)|[GO](./src/0116.populating-next-right-pointers-in-each-node.go)|Medium|
-|16|0117|[https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node-ii/description/](https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node-ii/description/ )|[GO](./src/0117.populating-next-right-pointers-in-each-node-ii.go)|Medium|
+|16|0117|[填充同一层的兄弟节点 II](https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node-ii/description/ )|[GO](./src/0117.populating-next-right-pointers-in-each-node-ii.go)|Medium|
 |17|0142|[环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/description/)|[GO](./src/0142.linked-list-cycle-ii.go)|Medium|
 |18|0143|[重排链表](https://leetcode-cn.com/problems/reorder-list/description/)|[GO](./src/0143.reorder-list.go)|Medium|
 |19|0147|[对链表进行插入排序](https://leetcode-cn.com/problems/insertion-sort-list/description/)|[GO](./src/0147.insertion-sort-list.go)|Medium|
