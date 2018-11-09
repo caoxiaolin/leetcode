@@ -48,8 +48,6 @@ func connect(root *TreeLinkNode) {
 		if node.Left != nil {
 			node.Left.Next = node.Right
 			queue = append(queue, node.Left)
-		}
-		if node.Right != nil {
 			if node.Next != nil {
 				node.Right.Next = node.Next.Left
 			}
