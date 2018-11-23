@@ -7,7 +7,7 @@ import (
 func TestMyCricularQueue(t *testing.T) {
 	circularQueue := Constructor(3)
 	res := circularQueue.DeQueue() // 返回false
-	if res != false {
+	if res {
 		t.Errorf("\n expect: false\nbut got: %v", res)
 	}
 	res1 := circularQueue.Rear() // 返回-1
@@ -39,7 +39,7 @@ func TestMyCricularQueue(t *testing.T) {
 		t.Errorf("\n expect: true\nbut got: %v", res)
 	}
 	res = circularQueue.EnQueue(4) // 返回false,队列已满
-	if res != false {
+	if res {
 		t.Errorf("\n expect: false\nbut got: %v", res)
 	}
 	res1 = circularQueue.Rear() // 返回3
@@ -79,7 +79,7 @@ func TestMyCricularQueue(t *testing.T) {
 		t.Errorf("\n expect: true\nbut got: %v", res)
 	}
 	res = circularQueue.DeQueue() // 返回false
-	if res != false {
+	if res {
 		t.Errorf("\n expect: true\nbut got: %v", res)
 	}
 }

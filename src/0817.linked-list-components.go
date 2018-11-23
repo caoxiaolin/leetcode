@@ -45,7 +45,7 @@ func numComponents(head *ListNode, G []int) int {
 	res := 0
 	flag := 0
 	for p != nil {
-		if m[p.Val] == true {
+		if m[p.Val] {
 			if flag == 0 {
 				res++
 				flag = 1

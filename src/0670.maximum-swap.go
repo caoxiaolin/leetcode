@@ -38,7 +38,7 @@ func maximumSwap(num int) int {
 			break
 		}
 	}
-	if flag == true {
+	if flag {
 		//查找x后面的最大数，记录下标 n
 		max := str[x+1]
 		n = x + 1

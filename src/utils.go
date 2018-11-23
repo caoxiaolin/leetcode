@@ -42,24 +42,6 @@ func SliceEqual(a, b []int) bool {
 }
 
 /**
- * merge two slice
- */
-/*
-func mergeSlice(a, b []int) []int {
-	if a == nil {
-		return b
-	}
-	if b == nil {
-		return a
-	}
-	for _, v := range b {
-		a = append(a, v)
-	}
-	return a
-}
-*/
-
-/**
  * 前序构建二叉树
  */
 func PreorderBuildBT(s string) *TreeNode {
@@ -123,22 +105,19 @@ func LevelorderBuildBT(a []interface{}) *TreeNode {
  * 层序遍历二叉树
  */
 func LevelorderBT(root *TreeNode) []int {
-	queue := make([]*TreeNode, 20)
-	i, j := 0, 1
-	queue[i] = root
+	var queue []interface{}
+	queue = append(queue, root)
 	res := []int{}
-	for queue[i] != nil {
-		node := queue[i]
+	for len(queue) > 0 {
+		node := queue[0].(*TreeNode)
 		res = append(res, node.Val)
-		i++
 		if node.Left != nil {
-			queue[j] = node.Left
-			j++
+			queue = append(queue, node.Left)
 		}
 		if node.Right != nil {
-			queue[j] = node.Right
-			j++
+			queue = append(queue, node.Right)
 		}
+		queue = queue[1:]
 	}
 	return res
 }
@@ -155,8 +134,10 @@ func PreorderBT(root *TreeNode) []int {
 	if root != nil {
 		res = append(res, root.Val)
 	}
-	res = mergeSlice(res, PreorderBT(root.Left))
-	res = mergeSlice(res, PreorderBT(root.Right))
+    leftres := PreorderBT(root.Left)
+	res = mergeSlice(res, leftres...)
+    rightres := PreorderBT(root.Right)
+	res = mergeSlice(res, rightres...)
 	return res
 }
 */
