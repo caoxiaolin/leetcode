@@ -16,4 +16,23 @@ func TestSearchRange(t *testing.T) {
 	if SliceEqual(result, expect) != true {
 		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
 	}
+
+	target = 6
+	fmt.Printf("target = %d\n", target)
+	result = searchRange(list, target)
+
+	expect = []int{-1, -1}
+	if SliceEqual(result, expect) != true {
+		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
+	}
+
+	target = 3
+	fmt.Printf("target = %d\n", target)
+	result = searchRange(list, target)
+
+	expect = []int{-1, -1}
+	if SliceEqual(result, expect) != true {
+		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
+	}
+
 }

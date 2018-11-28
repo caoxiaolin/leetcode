@@ -20,4 +20,10 @@ func TestLargestValues(t *testing.T) {
 	if SliceEqual(result, expect) != true {
 		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
 	}
+
+	tree = nil
+	result = largestValues(tree)
+	if len(result) > 0 {
+		t.Errorf("\n expect: %v\nbut got: xxx", []int{})
+	}
 }
