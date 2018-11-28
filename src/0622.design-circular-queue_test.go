@@ -5,7 +5,7 @@ import (
 )
 
 func TestMyCricularQueue(t *testing.T) {
-	circularQueue := Constructor(3)
+	circularQueue := Constructor622(3)
 	res := circularQueue.DeQueue() // 返回false
 	if res {
 		t.Errorf("\n expect: false\nbut got: %v", res)

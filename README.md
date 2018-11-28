@@ -39,15 +39,16 @@
 |32|0236|[二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/description/)|[GO](./src/0236.lowest-common-ancestor-of-a-binary-tree.go)|Medium|
 |33|0237|[删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/description/)|[GO](./src/0237.delete-node-in-a-linked-list.go)|Easy|
 |34|0287|[寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/description/)|[GO](./src/0287.find-the-duplicate-number.go)|Medium|
-|35|0445|[两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/description/)|[GO](./src/0445.add-two-numbers-ii.go)|Medium|
-|36|0513|[找树左下角的值](https://leetcode-cn.com/problems/find-bottom-left-tree-value/description/)|[GO](./src/0513.find-bottom-left-tree-value.go)|Medium|
-|37|0515|[在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/description/)|[GO](./src/0515.find-largest-value-in-each-tree-row.go)|Medium|
-|38|0535|[TinyURL 的加密与解密](https://leetcode-cn.com/problems/encode-and-decode-tinyurl/description/)|[GO](./src/0535.encode-and-decode-tinyurl.go)|Medium|
-|39|0622|[设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/description/)|[GO](./src/0622.design-circular-queue.go)|Easy|
-|40|0670|[最大交换](https://leetcode-cn.com/problems/maximum-swap/description/)|[GO](./src/0670.maximum-swap.go)|Medium|
-|41|0707|[设计链表](https://leetcode-cn.com/problems/design-linked-list/description/)|[GO](./src/0707.design-linked-list.go)|Easy|
-|42|0725|[分隔链表](https://leetcode-cn.com/problems/split-linked-list-in-parts/description/)|[GO](./src/0725.split-linked-list-in-parts.go)|Medium|
-|43|0807|[保持城市天际线](https://leetcode-cn.com/problems/max-increase-to-keep-city-skyline/description/)|[GO](./src/0807.max-increase-to-keep-city-skyline.go)|Medium|
-|44|0814|[二叉树剪枝](https://leetcode-cn.com/problems/binary-tree-pruning/description/)|[GO](./src/0814.binary-tree-pruning.go)|Medium|
-|45|0817|[链表组件](https://leetcode-cn.com/problems/linked-list-components/description/)|[GO](./src/0817.linked-list-components.go)|Medium|
-|46|0921|[使括号有效的最少添加](https://leetcode-cn.com/problems/minimum-add-to-make-parentheses-valid/description/)|[GO](./src/0921.minimum-add-to-make-parentheses-valid.go)|Medium|
+|35|0382|[链表随机节点](https://leetcode-cn.com/problems/linked-list-random-node/description/)|[GO](./src/0382.linked-list-random-node.go)|Medium|
+|36|0445|[两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/description/)|[GO](./src/0445.add-two-numbers-ii.go)|Medium|
+|37|0513|[找树左下角的值](https://leetcode-cn.com/problems/find-bottom-left-tree-value/description/)|[GO](./src/0513.find-bottom-left-tree-value.go)|Medium|
+|38|0515|[在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/description/)|[GO](./src/0515.find-largest-value-in-each-tree-row.go)|Medium|
+|39|0535|[TinyURL 的加密与解密](https://leetcode-cn.com/problems/encode-and-decode-tinyurl/description/)|[GO](./src/0535.encode-and-decode-tinyurl.go)|Medium|
+|40|0622|[设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/description/)|[GO](./src/0622.design-circular-queue.go)|Easy|
+|41|0670|[最大交换](https://leetcode-cn.com/problems/maximum-swap/description/)|[GO](./src/0670.maximum-swap.go)|Medium|
+|42|0707|[设计链表](https://leetcode-cn.com/problems/design-linked-list/description/)|[GO](./src/0707.design-linked-list.go)|Easy|
+|43|0725|[分隔链表](https://leetcode-cn.com/problems/split-linked-list-in-parts/description/)|[GO](./src/0725.split-linked-list-in-parts.go)|Medium|
+|44|0807|[保持城市天际线](https://leetcode-cn.com/problems/max-increase-to-keep-city-skyline/description/)|[GO](./src/0807.max-increase-to-keep-city-skyline.go)|Medium|
+|45|0814|[二叉树剪枝](https://leetcode-cn.com/problems/binary-tree-pruning/description/)|[GO](./src/0814.binary-tree-pruning.go)|Medium|
+|46|0817|[链表组件](https://leetcode-cn.com/problems/linked-list-components/description/)|[GO](./src/0817.linked-list-components.go)|Medium|
+|47|0921|[使括号有效的最少添加](https://leetcode-cn.com/problems/minimum-add-to-make-parentheses-valid/description/)|[GO](./src/0921.minimum-add-to-make-parentheses-valid.go)|Medium|

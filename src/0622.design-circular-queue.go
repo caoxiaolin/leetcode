@@ -45,7 +45,7 @@ type MyCircularQueue struct {
 }
 
 /** Initialize your data structure here. Set the size of the queue to be k. */
-func Constructor(k int) MyCircularQueue {
+func Constructor622(k int) MyCircularQueue {
 	return MyCircularQueue{make([]int, k), k, -1, -1}
 }
 
