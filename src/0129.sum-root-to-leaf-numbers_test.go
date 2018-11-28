@@ -18,4 +18,11 @@ func TestSumNumbers(t *testing.T) {
 	if result != expect {
 		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
 	}
+
+	tree = nil
+	result = sumNumbers(tree)
+	expect = 0
+	if result != expect {
+		t.Errorf("\n expect: %v\nbut got: %v", expect, result)
+	}
 }

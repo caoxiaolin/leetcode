@@ -30,15 +30,17 @@ func findKthLargest(nums []int, k int) int {
 		adjustHeap(nums, i, length)
 	}
 	n := 0
+	res := 0
 	for i := length - 1; i >= 0; i-- {
 		n++
 		if n == k {
-			return nums[0]
+			res = nums[0]
+			break
 		}
 		nums[0], nums[i] = nums[i], nums[0]
 		adjustHeap(nums, 0, i)
 	}
-	return 0
+	return res
 }
 
 func adjustHeap(nums []int, i, l int) {
