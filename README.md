@@ -12,7 +12,7 @@
 |5|0034|[在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/)|[GO](./src/0034.find-first-and-last-position-of-element-in-sorted-array.go)|Medium|
 |6|0059|[螺旋矩阵 II](https://leetcode-cn.com/problems/spiral-matrix-ii/description/)|[GO](./src/0059.spiral-matrix-ii.go)|Medium|
 |7|0061|[旋转链表](https://leetcode-cn.com/problems/rotate-list/description/)|[GO](./src/0061.rotate-list.go)|Medium|
-|8|0075|[颜色分类](https://leetcode-cn.com/problems/sort-colors/)|[GO](./src/0075.sort-colors.go)|Medium |
+|8|0075|[颜色分类](https://leetcode-cn.com/problems/sort-colors/)|[GO](./src/0075.sort-colors.go)|Medium|
 |9|0078|[子集](https://leetcode-cn.com/problems/subsets/description/)|[GO](./src/0078.subsets.go)|Medium|
 |10|0082|[删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/description/)|[GO](./src/0082.remove-duplicates-from-sorted-list-ii.go)|Medium|
 |11|0083|[删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/description/)|[GO](./src/0083.remove-duplicates-from-sorted-list.go)|Easy|
@@ -55,3 +55,4 @@
 |48|0814|[二叉树剪枝](https://leetcode-cn.com/problems/binary-tree-pruning/description/)|[GO](./src/0814.binary-tree-pruning.go)|Medium|
 |49|0817|[链表组件](https://leetcode-cn.com/problems/linked-list-components/description/)|[GO](./src/0817.linked-list-components.go)|Medium|
 |50|0921|[使括号有效的最少添加](https://leetcode-cn.com/problems/minimum-add-to-make-parentheses-valid/description/)|[GO](./src/0921.minimum-add-to-make-parentheses-valid.go)|Medium|
+|51|0946|[验证栈序列](https://leetcode-cn.com/problems/validate-stack-sequences/)|[GO](./src/0946.validate-stack-sequences.go)|Medium|
